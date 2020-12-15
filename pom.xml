@@ -65,6 +65,58 @@
         </plugins>
         <finalName>cas</finalName>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-authentication-api</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-api-configuration-model</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-webflow-api</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-webflow</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.73</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-web-api</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>8.5.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-services-authentication</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-logout-api</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-util-api</artifactId>
+            <version>5.3.16</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <cas.version>5.3.16</cas.version>
@@ -125,6 +177,37 @@
                 <!--
                 ...Additional dependencies may be placed here...
                 -->
+                <!--新增支持jdbc验证-->
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-jdbc</artifactId>
+                    <version>${cas.version}</version>
+                </dependency>
+                <!-- 添加邮箱的支持 -->
+<!--                <dependency>-->
+<!--                    <groupId>org.apereo.cas</groupId>-->
+<!--                    <artifactId>cas-server-support-pm-jdbc</artifactId>-->
+<!--                    <version>${cas.version}</version>-->
+<!--                </dependency>-->
+                <dependency>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <version>5.1.32</version>
+                </dependency>
+                <!-- Lombok -->
+                <dependency>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                    <version>1.16.10</version>
+                    <scope>compile</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-actions</artifactId>
+                    <version>${cas.version}</version>
+                </dependency>
+
             </dependencies>
         </profile>
 
