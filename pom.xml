@@ -174,6 +174,11 @@
                     <type>war</type>
                     <scope>runtime</scope>
                 </dependency>
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-saml-idp</artifactId>
+                    <version>${cas.version}</version>
+                </dependency>
                 <!--
                 ...Additional dependencies may be placed here...
                 -->
@@ -183,17 +188,17 @@
                     <artifactId>cas-server-support-jdbc</artifactId>
                     <version>${cas.version}</version>
                 </dependency>
-                <!-- 添加邮箱的支持 -->
-<!--                <dependency>-->
-<!--                    <groupId>org.apereo.cas</groupId>-->
-<!--                    <artifactId>cas-server-support-pm-jdbc</artifactId>-->
-<!--                    <version>${cas.version}</version>-->
-<!--                </dependency>-->
+                <!-- mysql8 -->
                 <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                    <version>5.1.32</version>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-jdbc-drivers</artifactId>
+                    <version>${cas.version}</version>
                 </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>mysql</groupId>-->
+<!--                    <artifactId>mysql-connector-java</artifactId>-->
+<!--                    <version>5.1.32</version>-->
+<!--                </dependency>-->
                 <!-- Lombok -->
                 <dependency>
                     <groupId>org.projectlombok</groupId>
