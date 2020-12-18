@@ -1,6 +1,6 @@
 {
   "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
-  "serviceId" : "^(https|http|imaps)://.*",
+  "serviceId" : "http://www.netsuite.com/sp",
   "name" : "SAMLService",
   "id" : 10000003,
   "evaluationOrder" : 10,
