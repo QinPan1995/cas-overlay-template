@@ -200,6 +200,13 @@
 <!--                    <version>5.1.32</version>-->
 <!--                </dependency>-->
                 <!-- Lombok -->
+                <!-- Password Management JDBC Begin -->
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-pm-jdbc</artifactId>
+                    <version>${cas.version}</version>
+                </dependency>
+                <!-- Password Management JDBC End -->
                 <dependency>
                     <groupId>org.projectlombok</groupId>
                     <artifactId>lombok</artifactId>
