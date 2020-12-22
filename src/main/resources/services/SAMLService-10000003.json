@@ -4,5 +4,5 @@
   "name" : "SAMLService",
   "id" : 10000003,
   "evaluationOrder" : 10,
-  "metadataLocation" : "https://system.na0.netsuite.com/saml2/sp.xml"
+  "metadataLocation" : "https://system.na2.netsuite.com/saml2/sp.xml"
 }
