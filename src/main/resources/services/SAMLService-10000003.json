@@ -1,8 +1,8 @@
 {
   "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
-  "serviceId" : "http://www.netsuite.com/sp",
+  "serviceId" : "http://www.netsuite.com/sp|https://5734684.app.netsuite.com.*",
   "name" : "SAMLService",
   "id" : 10000003,
   "evaluationOrder" : 10,
-  "metadataLocation" : "https://system.na2.netsuite.com/saml2/sp.xml"
+  "metadataLocation" : "https://system.na0.netsuite.com/saml2/sp.xml"
 }
